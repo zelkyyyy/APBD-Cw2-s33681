@@ -8,15 +8,22 @@ public class Wypozyczenie
     public Device Co { get; set; }
     public Person Kto { get; set; }
     public DateTime Kiedy { get; set; }
-    public int NaIleDni { get; set; }
-    public bool WTerminie { get; set; }
+    public DateTime? Zwrot { get; set; }
+    public bool? WTerminie { get; set; }
+    public DateTime Due { get; set; }
 
-    public Wypozyczenie(Device co, Person kto, DateTime kiedy, int naIleDni, bool wTerminie)
+    public Wypozyczenie(Device co, Person kto)
     {
         this.Co = co;
         this.Kto = kto;
-        this.Kiedy = kiedy;
-        this.NaIleDni = naIleDni;
-        this.WTerminie = wTerminie;
+        this.Kiedy = DateTime.Now;
+        this.Zwrot = null;
+        this.WTerminie = null;
+        this.Due = Kiedy.AddDays(30);
+    }
+
+    public override string ToString()
+    {
+        return $"Kto: {Kto}, Co: {Co}, Kiedy: {Kiedy}, Zwrot: {Zwrot},  WTerminie: {WTerminie}";
     }
 }
