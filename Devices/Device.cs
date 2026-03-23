@@ -13,4 +13,14 @@ public class Device
         this.Name = name;
         this.IsAvailable = true;
     }
+
+    public override string ToString()
+    {
+        return $"Name: {this.Name}, Is Available: {this.IsAvailable}";
+    }
+
+    public void Unavailable()
+    {
+        this.IsAvailable = false;
+    }
 }
