@@ -5,7 +5,7 @@ public class Student : Person
     public string Indeks { get; }
     public int Semestr  { get; set; }
 
-    public Student(string firstName, string lastName, string indeks, int semestr) : base(firstName, lastName)
+    public Student(string firstName, string lastName, string indeks, int semestr) : base(firstName, lastName, 2)
     {
         this.Indeks = indeks;
         this.Semestr = semestr;
