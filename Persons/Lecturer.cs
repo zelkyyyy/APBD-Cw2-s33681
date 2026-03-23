@@ -7,7 +7,7 @@ public class Lecturer : Person
     public string Stanowisko { get; set; }
 
     public Lecturer(string imie, string nazwisko, string tytuł, string katedra, string stanowisko) : base(imie,
-        nazwisko)
+        nazwisko, 5)
     {
         this.Tytuł = tytuł;
         this.Katedra = katedra;
