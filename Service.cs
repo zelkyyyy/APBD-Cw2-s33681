@@ -62,13 +62,8 @@ public class Service
     
     public void ReturnDevice(int personId, int deviceId)
     {
+        var wypo = GetWypozyczenie(personId, deviceId);
         var person = _persons.FirstOrDefault(p => p.Id == personId);
-        var device = _devices.FirstOrDefault(d => d.Id == deviceId);
-        var wypo = _wypozyczenia.FirstOrDefault(w => w.Kto == person && w.Co == device && w.Zwrot == null);
-        if (wypo is null)
-        {
-            throw new Exception($"Wypozyczenie not found");
-        }
         
         wypo.Co.IsAvailable = true;
         wypo.Zwrot = DateTime.Now;
@@ -113,7 +108,7 @@ public class Service
         }
     }
 
-    public void showOutdatedWypozyczenia()
+    public void ShowOutdatedWypozyczenia()
     {
         foreach (var wypo in _wypozyczenia)
             {
@@ -135,6 +130,18 @@ public class Service
            Console.WriteLine($"{person.FirstName} {person.LastName}");
        }
        Console.WriteLine($"łączna suma kar: {_persons.Sum(p => p.Kara)}");
+    }
+
+    public Wypozyczenie GetWypozyczenie(int personId, int deviceId)
+    {
+        var person = _persons.FirstOrDefault(p => p.Id == personId);
+        var device = _devices.FirstOrDefault(d => d.Id == deviceId);
+        var wypo = _wypozyczenia.FirstOrDefault(w => w.Kto == person && w.Co == device && w.Zwrot == null);
+        if (wypo is null)
+        {
+            throw new Exception($"Wypozyczenie not found");
+        }
+        return wypo;
     }
     
 }

@@ -10,4 +10,9 @@ public class Student : Person
         this.Indeks = indeks;
         this.Semestr = semestr;
     }
+
+    public override string ToString()
+    {
+        return $"{Indeks} {FirstName} {LastName}";
+    }
 }

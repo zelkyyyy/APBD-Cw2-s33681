@@ -2,7 +2,7 @@ namespace APBD_Cw2_s33681;
 
 public class Device
 {
-    private static int _IdCounter = 0;
+    private static int _IdCounter = 1;
     public int Id { get;  }
     public string Name { get; set; }
     public bool IsAvailable { get; set; }
@@ -16,7 +16,7 @@ public class Device
 
     public override string ToString()
     {
-        return $"Name: {this.Name}, Is Available: {this.IsAvailable}";
+        return $"{this.Name} (Available: {this.IsAvailable})";
     }
 
     public void Unavailable()

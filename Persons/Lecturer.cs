@@ -13,4 +13,9 @@ public class Lecturer : Person
         this.Katedra = katedra;
         this.Stanowisko = stanowisko;
     }
+
+    public override string ToString()
+    {
+        return $"{Tytuł} {FirstName} {LastName} - {Katedra}";
+    }
 }

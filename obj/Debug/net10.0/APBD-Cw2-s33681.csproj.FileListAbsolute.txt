@@ -1,0 +1,15 @@
+/Users/zelek/Desktop/APBD-Cw2-s33681/bin/Debug/net10.0/APBD-Cw2-s33681
+/Users/zelek/Desktop/APBD-Cw2-s33681/bin/Debug/net10.0/APBD-Cw2-s33681.deps.json
+/Users/zelek/Desktop/APBD-Cw2-s33681/bin/Debug/net10.0/APBD-Cw2-s33681.runtimeconfig.json
+/Users/zelek/Desktop/APBD-Cw2-s33681/bin/Debug/net10.0/APBD-Cw2-s33681.dll
+/Users/zelek/Desktop/APBD-Cw2-s33681/bin/Debug/net10.0/APBD-Cw2-s33681.pdb
+/Users/zelek/Desktop/APBD-Cw2-s33681/obj/Debug/net10.0/APBD-Cw2-s33681.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zelek/Desktop/APBD-Cw2-s33681/obj/Debug/net10.0/APBD-Cw2-s33681.AssemblyInfoInputs.cache
+/Users/zelek/Desktop/APBD-Cw2-s33681/obj/Debug/net10.0/APBD-Cw2-s33681.AssemblyInfo.cs
+/Users/zelek/Desktop/APBD-Cw2-s33681/obj/Debug/net10.0/APBD-Cw2-s33681.csproj.CoreCompileInputs.cache
+/Users/zelek/Desktop/APBD-Cw2-s33681/obj/Debug/net10.0/APBD-Cw2-s33681.sourcelink.json
+/Users/zelek/Desktop/APBD-Cw2-s33681/obj/Debug/net10.0/APBD-Cw2-s33681.dll
+/Users/zelek/Desktop/APBD-Cw2-s33681/obj/Debug/net10.0/refint/APBD-Cw2-s33681.dll
+/Users/zelek/Desktop/APBD-Cw2-s33681/obj/Debug/net10.0/APBD-Cw2-s33681.pdb
+/Users/zelek/Desktop/APBD-Cw2-s33681/obj/Debug/net10.0/APBD-Cw2-s33681.genruntimeconfig.cache
+/Users/zelek/Desktop/APBD-Cw2-s33681/obj/Debug/net10.0/ref/APBD-Cw2-s33681.dll

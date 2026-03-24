@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "APBD-Cw2-s33681/1.0.0": {
+        "runtime": {
+          "APBD-Cw2-s33681.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "APBD-Cw2-s33681/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
