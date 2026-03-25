@@ -1,6 +1,6 @@
 namespace APBD_Cw2_s33681;
 
-public class Device
+public abstract class Device
 {
     private static int _IdCounter = 1;
     public int Id { get;  }
@@ -22,5 +22,10 @@ public class Device
     public void Unavailable()
     {
         this.IsAvailable = false;
+    }
+
+    public void Available()
+    {
+        this.IsAvailable = true;
     }
 }

@@ -21,7 +21,7 @@ public class Service
         this._devices.Add(device);
     }
 
-    public void setPenaltyRate(double penaltyRate)
+    public void SetPenaltyRate(double penaltyRate)
     {
         this.PenaltyRate = penaltyRate;
     }
@@ -63,16 +63,13 @@ public class Service
     public void ReturnDevice(int personId, int deviceId)
     {
         var wypo = GetWypozyczenie(personId, deviceId);
-        var person = _persons.FirstOrDefault(p => p.Id == personId);
+        //var person = _persons.FirstOrDefault(p => p.Id == personId);
         
-        wypo.Co.IsAvailable = true;
-        wypo.Zwrot = DateTime.Now;
-        
-        var ile = wypo.Zwrot.Value - wypo.Due;
-        
-        if (ile.TotalDays > 0 && person != null)
-            person.Kara += Math.Ceiling(ile.TotalDays) * PenaltyRate;
+        if (wypo is null)
+            wypo.Return(PenaltyRate);
     }
+
+    
 
     public void ShowAllDevices()
     {

@@ -2,8 +2,8 @@ namespace APBD_Cw2_s33681;
 
 public class Projector : Device
 {
-    public int Luminity { get; set; }
-    public String Resolution { get; set; }
+    public int Luminity { get;  }
+    public string Resolution { get;  }
 
     public Projector(int luminity, String resolution) : base("Projector")
     {

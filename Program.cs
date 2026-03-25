@@ -8,7 +8,7 @@ class Program
     static void Main(string[] args)
     {
         var service = new Service();
-        service.setPenaltyRate(5);
+        service.SetPenaltyRate(5);
         var laptop = new Laptop("i7-7700K", 24);
         var camera = new Camera(24, "1920x1080");
         var projector = new Projector(400, "FHD 1920x1080");
@@ -23,30 +23,29 @@ class Program
         service.AddPerson(lekturer);
         
         service.BorrowDevice(1, 1);
-        //service.BorrowDevice(2, 1);
+        try
+        {
+            service.BorrowDevice(2, 1);
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
         
         
         service.ShowAllDevices();
         service.ReturnDevice(1, 1);
         service.ShowAvailableDevices();
-        
         service.BorrowDevice(2, 2);
-
-        service.GetWypozyczenie(2, 2).Due = DateTime.Now.AddDays(-5);
-        
+        service.GetWypozyczenie(2, 2).ShortenDueDate(5);
         service.ReturnDevice(2, 2);
-        
-        
         projector.Unavailable();
         
         service.Raport();
-        
-        
         service.ShowWypozyczenia(1);
-        
         service.ShowOutdatedWypozyczenia();
-        
-       // service.Raport();
+        service.Raport();
         
         
     }
