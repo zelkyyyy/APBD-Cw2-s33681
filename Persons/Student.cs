@@ -13,6 +13,6 @@ public class Student : Person
 
     public override string ToString()
     {
-        return $"{Indeks} {FirstName} {LastName}";
+        return $"{Indeks} {base.ToString()}";
     }
 }

@@ -11,4 +11,9 @@ public class Camera : Device
         this.Bitrate = bitrate;
         this.Resolution = resolution;
     }
+
+    public override string ToString()
+    {
+        return $"{base.ToString()} Specyfikacja: bitrate={this.Bitrate}, resolution={this.Resolution}";
+    }
 }

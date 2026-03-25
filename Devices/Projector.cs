@@ -10,4 +10,9 @@ public class Projector : Device
         this.Luminity = luminity;
         this.Resolution = resolution;
     }
+
+    public override string ToString()
+    {
+        return $"{base.ToString()} Specyfikacja: Jasność={this.Luminity} Resolution={this.Resolution}";
+    }
 }

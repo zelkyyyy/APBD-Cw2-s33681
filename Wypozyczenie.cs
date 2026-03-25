@@ -24,6 +24,6 @@ public class Wypozyczenie
 
     public override string ToString()
     {
-        return $"Kto: {Kto}, Co: {Co}, Kiedy: {Kiedy}, Zwrot: {Zwrot},  WTerminie: {WTerminie}";
+        return $"Wypożyczenie:\n\tKto: {Kto},\n\tCo: {Co},\n\tKiedy: {Kiedy},\n\tZwrot: {Zwrot},\n\tCzy w terminie: {(WTerminie==true?"Tak":"Nie")}";
     }
 }

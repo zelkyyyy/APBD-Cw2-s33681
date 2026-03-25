@@ -17,5 +17,10 @@ public class Person
         this.WypozyczeniaLimit = wypozyczeniaCount;
         this.Kara = 0;
     }
+
+    public override string ToString()
+    {
+        return $"{this.FirstName} {this.LastName} Limit: {this.WypozyczeniaLimit} Kara: {this.Kara}";
+    }
     
 }

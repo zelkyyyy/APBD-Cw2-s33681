@@ -16,7 +16,7 @@ public class Device
 
     public override string ToString()
     {
-        return $"{this.Name} (Available: {this.IsAvailable})";
+        return $"{this.Name} (Dostępność: {this.IsAvailable})";
     }
 
     public void Unavailable()

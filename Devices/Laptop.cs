@@ -9,4 +9,9 @@ public class Laptop : Device
         this.Processor = Processor;
         this.Ram = Ram;
     }
+
+    public override string ToString()
+    {
+        return $"{base.ToString()} Specyfikacja: Procesor={this.Processor} Ram={this.Ram}";
+    }
 }

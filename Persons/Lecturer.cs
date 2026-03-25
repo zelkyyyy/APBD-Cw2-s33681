@@ -16,6 +16,6 @@ public class Lecturer : Person
 
     public override string ToString()
     {
-        return $"{Tytuł} {FirstName} {LastName} - {Katedra}";
+        return $"{Katedra} {Tytuł} {base.ToString()}";
     }
 }
